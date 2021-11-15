@@ -1,17 +1,14 @@
 import cv2
 import tensorflow as tf
-from keras_preprocessing.image import ImageDataGenerator
-from tensorflow import keras
-from keras.preprocessing.image import load_img
-from keras.preprocessing.image import img_to_array
-from tensorflow.keras.applications.vgg16 import VGG16
-from tensorflow.keras.layers import Dense
-from tensorflow.keras.layers import Flatten
-from tensorflow.keras.optimizers import SGD
-from tensorflow.keras.models import Model
-from keras.models import load_model
 import matplotlib.pyplot as plt
 import numpy as np
+from tensorflow import keras
+from keras_preprocessing.image import ImageDataGenerator, img_to_array, load_img
+from tensorflow.keras.layers import Dense, Flatten
+from tensorflow.keras.models import Model
+from tensorflow.keras.optimizers import SGD
+from tensorflow.keras.applications.vgg16 import VGG16
+from keras.models import load_model
 
 '''
 PROGRAM DO TRENOWANIA SIECI NEURONOWEJ I KLASYFIKACJI OBRAZOW
@@ -118,5 +115,5 @@ def testing():
 # Wywolanie odpowiednich funkcji do trenowania lub klasyfikacji.
 # Odkomentowac odpowiednie:
 
-#training()
-testing()
+training()
+# testing()
